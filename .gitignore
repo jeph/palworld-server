@@ -1,0 +1,5 @@
+palworld/*
+.DS_Store
+!palworld/.gitkeep
+backup.env
+palworld.env
