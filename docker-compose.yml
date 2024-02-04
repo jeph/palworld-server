@@ -21,6 +21,10 @@ services:
       - COMMUNITY=true
       - SERVER_NAME="Jephs-World-of-Pals"
       - SERVER_DESCRIPTION="The-best-Palworld-server-on-the-surface-net!"
+      - AUTO_UPDATE_ENABLED=true
+      - AUTO_UPDATE_WARN_MINUTES=5
+      - AUTO_UPDATE_CRON_EXPRESSION=30 */1 * * *
+      - BACKUP_ENABLED=false
     env_file: ./palworld.env
     volumes:
       - ./palworld:/palworld/
