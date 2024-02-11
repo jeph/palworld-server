@@ -26,6 +26,7 @@ services:
       - AUTO_UPDATE_CRON_EXPRESSION=30 */1 * * *
       - BACKUP_ENABLED=false
       - PAL_EGG_DEFAULT_HATCHING_TIME=2.0
+      - BASE_CAMP_WORKER_MAX_NUM=19
     env_file: ./palworld.env
     volumes:
       - ./palworld:/palworld/
