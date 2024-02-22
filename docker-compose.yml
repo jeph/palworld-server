@@ -34,7 +34,7 @@ services:
     image: offen/docker-volume-backup:v2.35.0
     restart: unless-stopped
     environment:
-      - BACKUP_CRON_EXPRESSION=0 1/6 * * *
+      - BACKUP_CRON_EXPRESSION=0 1,7,13,19 * * *
       - BACKUP_COMPRESSION=gz
       - GZIP_PARALLELISM=1
       - BACKUP_RETENTION_DAYS=14
